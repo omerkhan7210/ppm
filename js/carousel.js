@@ -24,6 +24,10 @@ function changeSlide(btn) {
 
     if (currentSlide < 0) {
       currentSlide = slidesLength - 1;
+      rightSlide.style.transform = `translateY(-${
+        (slidesLength - 1 - currentSlide) * 100
+      }%)`;
+      leftSlide.style.transform = `translateY(-${currentSlide * 100}%)`;
     }
   }
 
@@ -36,7 +40,6 @@ function changeSlide(btn) {
 setInterval(autoChangeSlide, 5000);
 
 function autoChangeSlide() {
-
   currentSlide++;
 
   if (currentSlide > slidesLength - 1) {

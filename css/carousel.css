@@ -1,12 +1,17 @@
-.slider-container {
-  font-family: "Poppins", sans-serif;
+.carousel-container {
+  width: 100%;
   height: 100vh;
-  width: 96vw;
-  overflow: hidden;
-  position: relative;
-  color: #fff;
+  font-family: "Poppins", sans-serif;
   margin: 20px 0px;
   z-index: -1;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  height: 100%;
 }
 
 .left-slides {
@@ -47,12 +52,12 @@
   font-size: clamp(0.8875rem, 0.5rem + 2vw, 2.3rem);
   margin-bottom: 10px;
   font-weight: bolder;
+  text-align: center;
 }
 
 .left-slides div p {
   font-size: clamp(0.6875rem, 0.5195rem + 0.8673vw, 1.3rem);
   padding: 0px 60px;
-  text-align: justify;
 }
 
 .right-slides {
@@ -84,51 +89,61 @@
 }
 
 .slider-nav-btns {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  width: 100%;
+  width: 65%;
   z-index: 100;
-  bottom: 0;
-  left: 15%;
   cursor: pointer;
+  float: right;
 }
 
 .slider-nav-btns > a {
   z-index: 1000;
   margin-inline: 20px;
-  background: none;
-  outline: 1px solid white;
+  background: white;
   border-radius: 10em;
   box-shadow: 1px 3px 5px grey;
   cursor: pointer;
+  color: black;
 }
 
-/*.slider-container .buttons button{
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    font-size: 1.5rem;
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    background-color: rgba(68, 68, 68, 0);
+.slider-nav-btns > a:hover {
+  outline: 1px solid white;
+  color: white;
 }
 
-.buttons button:hover{
-    opacity: 0.9;
+.slider-nav-btns > a::before {
+  background-color: none;
+  border-radius: 10em;
 }
 
-.buttons button:focus{
-    outline: none;
+.slider-container .buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  font-size: 1.5rem;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(68, 68, 68, 0);
 }
 
+.buttons button:hover {
+  opacity: 0.9;
+}
 
-.slider-container .right-btn{
-    transform: translateY(-100%);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}*/
+.buttons button:focus {
+  outline: none;
+}
+
+.slider-container .right-btn {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 @media screen and (max-width: 1150px) {
   .left-slides {
@@ -144,7 +159,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .slider-container {
+  .carousel-container {
     height: 80vh;
     margin: 40px 0px;
   }
@@ -179,7 +194,7 @@
   }
 
   .slide-1 {
-    background: url(img/banner1.jpg);
+    background: url(/img/banner1.jpg);
   }
   .slide-2 {
     background: url(img/banner2.jpg);
@@ -214,9 +229,25 @@
     display: none;
   }
 
-  .slider-container button {
+  .slider-container .buttons button {
     top: 90%;
     font-size: 1rem;
     padding: 9px;
+    left: 50%;
+    transform: translateX(-50%);
   }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-nav-btns {
+    display: none;
+  }
+}
+
+.collab-carousel .left-slides {
+  width: 65%;
+}
+
+.collab-carousel .right-slides {
+  width: 65%;
 }
