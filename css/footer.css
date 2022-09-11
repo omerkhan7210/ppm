@@ -157,10 +157,6 @@ footer#site-footer #footer-social-buttons img:hover {
 }
 
 @media screen and (max-width: 959px) {
-  footer#site-footer {
-    width: 100%;
-  }
-
   footer#site-footer section.horizontal-footer-section {
     flex-direction: column;
     flex-wrap: wrap;
@@ -169,35 +165,25 @@ footer#site-footer #footer-social-buttons img:hover {
   footer#site-footer section.horizontal-footer-section div {
     flex-basis: 100%;
     width: 100%;
+    text-align: center;
   }
 
   footer#site-footer ul li {
     display: block !important;
-    padding: 1em !important;
-    border-top: 1px solid #555555;
+    padding: 0.8em !important;
     border-bottom: none;
     border-left: none;
     border-right: none;
     font-size: 1.15rem !important;
   }
 
-  footer#site-footer ul li:first-child {
-    border-top: none;
-  }
-
-  footer#site-footer a.footer-button {
-    display: block;
-    text-align: center;
-    max-width: 350px;
-    margin: 0.32rem auto;
-  }
-
   footer#site-footer section.horizontal-footer-section#footer-top-section div {
     margin-top: 0;
-    margin-bottom: 1.68rem;
+    margin-bottom: 1.2rem;
   }
 
   footer#site-footer #footer-logo {
+    justify-content: center;
     margin-right: 0;
   }
 
