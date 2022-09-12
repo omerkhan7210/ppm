@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 :root{
     --gray:#888888;
-    --black:#0000;
+    --black:rgb(0, 0, 0);
     --white:#ffff;
     --red: hsl(0, 78%, 62%);
     --cyan: hsl(180, 62%, 55%);
@@ -22,8 +22,8 @@
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    background-image: linear-gradient(rgba(2, 2, 2, 0.5) 100%,
-        rgba(2, 2, 2, 0.5)100%), url(../img/service.jpg);
+    background-image: linear-gradient(rgba(2, 2, 2, 0.525) 100%,
+        rgba(2, 2, 2, 0.511)100%), url(../img/service.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,10 +40,7 @@
     flex-direction: column;
     padding-top: 30px;
 }
-h1{
-    font-size: 30px;
-    text-align: center;
-}
+
 
 .list-numbered {
     list-style: none;
@@ -88,7 +85,7 @@ h1{
     margin: 0 0 0 2em;
 }
 
-.list-type1 a {
+.list-type1 p {
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
@@ -97,20 +94,19 @@ h1{
     background: var(--btn_background);
     color: #fff;
     font-size: 19px;
-    text-decoration: none;
     -moz-border-radius: .3em;
     -webkit-border-radius: .3em;
     border-radius: 10em;
     transition: all .2s ease-in-out;
 }
 
-.list-type1 a:hover {
+.list-type1 p:hover {
     background: #d6d4d4;
     color: var(--btn_background);
     text-decoration: none;
     transform: scale(1.1);
 }
-.list-type1 a:before {
+.list-type1 p:before {
     content: counter(li);
     counter-increment: li;
     position: absolute;
@@ -277,7 +273,7 @@ h1{
 
 .text {
     
-    color: var(--primary);
+    color: black;
     font-size: 25px;
     font-weight: 600;
 }
@@ -295,7 +291,7 @@ h1{
         object-fit: cover;
         background-image: linear-gradient(rgba(2,2, 2,0.5) 100%, rgba(2,2,2, 0.5)100%), url(../img/bottomimg.jpg);
 }
-.row{
+.row-service{
     display: flex;
     justify-content: space-around;
     padding-top: 75px;
@@ -303,31 +299,21 @@ h1{
 .bottom-img-heading{
     color: var(--white);
 }
-.bottom-img-heading h2{
-    font-size: 30px;
+.bottom-img-heading h1{
+    font-size: 3rem;
+    margin-bottom: 0;
 }
-.btn{
-font-size: 18px;
-font-weight: 700;
-color: var(--white);
-text-transform: uppercase;
-background: #ef5003;
-transition: all 0.4s ease;
-border-radius: 27px;
-width: 12%;
-height: 40px;
-text-align: center;
-padding-top: 17px;
-outline: none;
-cursor: pointer;
-}
-.btn:hover{
-    background: var(--primary);
-    color: var(--white);
-}
+
 
 @media screen and (max-width:800px) {
 
+    .img{
+        margin-top: 2rem;
+    }
+
+    .img h1{
+        font-size:3rem;
+    }
 
     .boxes{
         display: block;
@@ -355,30 +341,26 @@ cursor: pointer;
              width: 300px;
              margin: 0 auto;
          }
-                 .img {
-                     min-height: 200px;
-                     width: 100%;
-                     background-size: cover;
-                     background-position: center;
-                     object-fit: cover;
-                     background-image: linear-gradient(rgba(241, 241, 241, 0.349) 100%, rgba(230, 222, 222, 0.692)100%), url(../img/service.jpg);
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;
-                 }
-                 .row {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                     padding-top: 75px;
-
-                    }
-                .btn{
-                    width: 30%;
-                }
+                
+                
                 .heading p{
                     text-align: center;
                 }
+
+        .row-service{
+            flex-direction: column;
+            padding-block: 1rem;
+        }
+        .bottom-img-heading{
+            text-align: center;
+        }
+
+        .text-card p{
+            font-size:16px;
+        }
+
+        .text-container h1{
+            text-align: center;
+        }
                 
 }

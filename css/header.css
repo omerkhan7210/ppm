@@ -350,6 +350,7 @@ button:focus {
     top: 30px;
     left: 0;
     right: 0;
+    z-index: 100;
   }
 
   .header-ul {
