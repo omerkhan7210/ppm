@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <%- include("./partials/head.ejs")%>
+    <link rel="stylesheet" href="css/style_upcoming.css">
+  
+    <style>
+    .blog-slider__button{
+    box-shadow: 0px 14px 80px #eee;
+   
+    }
+    
+    .blog-slider__button:hover{
+        color:white;
+    }
+   
+    .registerbtn:hover{
+       color:black;
+    }
+    
+    .registerbtn a:hover{
+       color:black;
+    }
+    
+    .registerbtn{
+        font-size:14px; 
+        padding-left:20px;
+        padding-right:20px;
+        margin-bottom: 10px; 
+        padding-top:0px; 
+        background:#0a58ca; 
+        border-radius:10px;
+    }
+    
+    .blog-slider__img{box-shadow: 4px 13px 30px 1px grey;}
+    .blog-slider__img:after {
+        background:none;
+    }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <!--MAIN HEADER-->
+    <header class="container" id="site-header">
+      <%- include("./partials/header.ejs")%>
+    </header>
+      
+    <div class="container" style="margin-top:30px;">  
+    <div class="row">
+        
+        <div class="col-12" style="text-align:center;">
+            <img src="img/icms.png" width="30%" style="margin-bottom:10px;">
+            <h5 >The Parent Company</h5>
+            <h2>Event Registration</h2>
+            <hr>
+    
+            <h5><strong>Registration for two webinars together Special discounted
+</strong></h5>
+</div>
+
+</div>
+
+<div class="row justify-content-center">
+
+<center>   
+    <a href="/payment"><button type="button" class="btn" Style="font-size:17px; padding-left:10px;padding-right:10px;  margin-bottom: 10px; padding-top:0px; background:#0a58ca; border-radius:10px;";>Payment In USD</button></a>
+   
+   
+   
+    <a href="/pay"><button type="button" class="btn" Style="font-size:17px; padding-left:10px;padding-right:10px;  margin-bottom: 10px; padding-top:0px; background:#0a58ca; border-radius:10px;";>Payment In PKR</button></a>
+   
+    
+</center>
+   
+    </div>
+    </div>
+                
+      <h2 class="text-center newheading" style="margin-top:20px;">
+                     <span>JOIN THE EVENT</span>
+                        Upcoming Events
+      </h2>
+
+  <div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="img/webinars/cor1.jpg" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">Webinar Aug 30th, 2022</span>
+          <div class="blog-slider__text">Timing: US at 7.00 am [UTC -4], UK at
+          12.00 pm, [UTC +1.00]
+          Pak at 4.00 pm, [UTC +5.00], SGP at 7.00 pm, UTC +8.00
+          </div>
+          <div class="blog-slider__title">How "Congruent Leadership" may help Moving Business</div>
+          
+          <a href="event-page4.html" class="blog-slider__button blog-btn" style="margin-bottom:10px">Event Page</a>
+          <a href="event3_speakers.php" class="blog-slider__button" style="margin-bottom:10px">Intro To Speaker</a>
+        </div>
+      </div>   
+    </div>
+  </div>
+   <div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="img/webinars/cor2.jpg" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">Webinar #1 Sep 14th, 2022</span>
+          <div class="blog-slider__text">Timing: US at 7.00 am [UTC -4], UK at
+          12.00 pm, [UTC +1.00]
+          Pak at 4.00 pm, [UTC +5.00], SGP at 7.00 pm, UTC +8.00
+          </div>
+          <div class="blog-slider__title">How to Craft Org Culture by Design for
+            the Challenges in New Normal?</div>
+          
+          <a href="event-page2.html" class="blog-slider__button blog-btn" style="margin-bottom:10px">Event Page</a>
+          <a href="event1_speakers.php" class="blog-slider__button" style="margin-bottom:10px">Intro To Speaker</a>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="img/webinars/cor3.jpg" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">Webinar #2 Sep 22nd, 2022</span>
+          <div class="blog-slider__text">Timing: US at 7.00 am, [UTC -4], UK at 12.00 pm, [UTC +1.00], Pak at 4.00 pm, [UTC +5.00],SGT at 7.00 pm +8.00]</div>
+          <div class="blog-slider__title">How to Develop Fluid Org for
+            Moving Business?</div>
+          <a href="event-page3.html" class="blog-slider__button blog-btn" style="margin-bottom:10px">Event Page</a>
+          <a href="event2_speakers.php" class="blog-slider__button" style="margin-bottom:10px">Intro To Speaker</a>
+        </div>
+      </div>   
+    </div>
+  </div>
+
+<div class="container" style="margin-bottom:30px;">
+    <div class="row justify-content-center">
+        
+        
+            
+                <div class="col-lg-12" style="margin-top:20px;">
+                <center>
+                <h2>Event Registration</h2>
+                </center>
+                </div>
+                
+                <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn registerbtn " style="margin-right:10px;"> <a style="color:white" href="/payment"  >Payment In USD</a></button>
+  <button type="button" class="btn registerbtn" > <a style="color:white" href="/pay" >Payment In PKR</a></button>
+</div>
+                
+                
+                
+               
+             
+      
+    </div>
+   
+    
+</div>
+      
+ <!--FOOTER-->
+ <footer id="site-footer">
+  <%- include("./partials/footer.ejs")%>
+</footer>
+
+  </body>
+</html>
